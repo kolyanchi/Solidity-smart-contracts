@@ -1,0 +1,82 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createToken",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"costPrice","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getTokenOwner",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "getTokenInfo",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"tokenName","type":"string"},
+				{"name":"tokenCostPrice","type":"uint256"}
+			]
+		},
+		{
+			"name": "changeOwner",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"},
+				{"name":"pubKeyNewOwner","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "changeCostPrice",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"},
+				{"name":"costPrice","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "putUpForSale",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"yourPrice","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"price","type":"uint256"},
+				{"name":"sale","type":"bool"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"name","type":"string"},{"name":"costPrice","type":"uint256"},{"name":"sale","type":"bool"}],"name":"tokensArr","type":"tuple[]"},
+		{"name":"tokenToOwner","type":"map(uint256,uint256)"}
+	]
+}
