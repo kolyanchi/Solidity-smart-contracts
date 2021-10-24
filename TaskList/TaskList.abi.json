@@ -1,0 +1,76 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addTask",
+			"inputs": [
+				{"name":"title","type":"string"}
+			],
+			"outputs": [
+				{"name":"thisId","type":"uint256"}
+			]
+		},
+		{
+			"name": "NumOpenTasks",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "ListTask",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string[]"}
+			]
+		},
+		{
+			"name": "TaskDescription",
+			"inputs": [
+				{"name":"taskId","type":"uint8"}
+			],
+			"outputs": [
+				{"components":[{"name":"title","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"accomplishment","type":"bool"}],"name":"value0","type":"tuple"}
+			]
+		},
+		{
+			"name": "DeleteTask",
+			"inputs": [
+				{"name":"taskId","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "AccomplishmentTask",
+			"inputs": [
+				{"name":"taskId","type":"uint8"}
+			],
+			"outputs": [
+				{"components":[{"name":"title","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"accomplishment","type":"bool"}],"name":"value0","type":"tuple"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"lastTaskId","type":"uint8"},
+		{"components":[{"name":"title","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"accomplishment","type":"bool"}],"name":"tasks","type":"map(uint8,tuple)"}
+	]
+}
