@@ -1,0 +1,91 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "AcceptAttack",
+			"inputs": [
+				{"name":"attack","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "sendAllMoneyAndDestroyAccount",
+			"inputs": [
+				{"name":"dest","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "GetProtection",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "SetProtection",
+			"inputs": [
+				{"name":"protectionPower","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "GetHealth",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "SetHealth",
+			"inputs": [
+				{"name":"healthPower","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "health",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"health","type":"uint256"}
+			]
+		},
+		{
+			"name": "protection",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"protection","type":"uint256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"health","type":"uint256"},
+		{"name":"protection","type":"uint256"}
+	]
+}
