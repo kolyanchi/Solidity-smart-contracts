@@ -1,3 +1,5 @@
+Debots for making a shopping list (product names, quantity, price) and the ability to mark already purchased goods
+
 Basic smart contract:
 ShoppingList.sol
 Interface for the Debot:
