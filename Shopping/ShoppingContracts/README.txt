@@ -8,7 +8,7 @@ Basic abstract contract-debot initialization of the list:
 InitializingListDebot.sol
 The first subsidiary contract-debot: 
 FillingShoppingListDebot.sol
-(net.ton.dev 0:9946b2d10e0a53bcefadd4fc76e4b0218ba07336b2acbc2cbdf74bd61245f01f)
+(net.ton.dev 0:d4ce344f98b65e9b5ef7873a4f36e582a951daebecf47a6cb32dcf5d86281d8c)
 The second subsidiary contract-debot:
 ShoppingDebot.sol
-(net.ton.dev 0:ed9b656e9782589c5984077575681f604f49837ec806e15c3ac11a76d052c10c)
+(net.ton.dev 0:bb667f686c45a8f80804b9057b81a7de5787c506b203d31d772d72b5c3a9f081)
