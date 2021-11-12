@@ -19,16 +19,16 @@ abstract contract InitializingListDebot is Debot, Upgradable {
     bytes m_icon;
     TvmCell m_ShoppingListStateInit;
     TvmCell m_ShoppingListData;
-    TvmCell m_ShoppingListCode; // TODO contract code
-    address m_address;  // TODO contract address
+    TvmCell m_ShoppingListCode; 
+    address m_address; 
     SammaritOfPurchases m_sammaritOfPurchases; 
-    uint32 NumberProducts;       // Statistics of incompleted and completed tasks
+    uint32 NumberProducts;     
     uint32 m_purchaseId;
-    uint32 m_purchasePrice;    // Task id for update. I didn't find a way to make this var local
-    uint256 m_masterPubKey; // User pubkey
-    address m_msigAddress;  // User wallet address
+    uint32 m_purchasePrice;  
+    uint256 m_masterPubKey; 
+    address m_msigAddress;
 
-    uint32 INITIAL_BALANCE =  200000000;  // Initial TODO contract balance
+    uint32 INITIAL_BALANCE =  200000000;  
 
 
     function setShoppingListCode(TvmCell code,TvmCell data) public {
