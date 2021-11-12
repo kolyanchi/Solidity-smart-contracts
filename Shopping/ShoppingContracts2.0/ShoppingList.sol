@@ -63,8 +63,6 @@ contract ShoppingList is IntShoppingList{
         uint32 price;
         uint64 timePurchase;
         bool isDone;
-        
-        //tvm.accept();
         for((uint32 id, Purchase purchase) : m_purchase) {
             name = purchase.name;
             count = purchase.count;
@@ -80,7 +78,6 @@ contract ShoppingList is IntShoppingList{
         uint32 numberPaidPurchases;
         uint32 numberUnPaidPurchases;
         uint32 totalAmountPurchases;
-        tvm.accept();
         for((, Purchase purchase) : m_purchase) {
             if  (purchase.isDone) {
                 numberPaidPurchases ++;
@@ -130,7 +127,6 @@ contract ShoppingList is IntShoppingList{
         string fromWhom;
         string messageText;
         bool read;
-        tvm.accept();
         for(uint32 i = 1; i<=m_count_message;i++){
             m_message[i].read = true;
         }
